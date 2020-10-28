@@ -1,0 +1,12 @@
+html {
+    font-size: small;
+}
+
+body {
+    text-align: center;
+    background-color: orange;
+}
+
+ul {
+    white-space: pre-wrap;
+  }

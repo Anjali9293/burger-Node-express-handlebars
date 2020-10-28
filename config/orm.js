@@ -21,8 +21,9 @@ class ORM {
     }
 
     updateOne( id, devoured ){
+        console.log(devoured)
         const sql = `UPDATE burgers SET devoured = ? WHERE id = ?`;
-        return db.query( sql, [devoured, id ] )
+        return db.query( sql, [devoured ? 1 : 0, id ] )
     }
 }
 
