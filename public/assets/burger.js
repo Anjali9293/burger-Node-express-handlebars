@@ -44,6 +44,8 @@ $(document).ready( function(){
       function() {
         console.log("created new burger");
         // Reload the page to get the updated list
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         location.reload();
       }
     );
