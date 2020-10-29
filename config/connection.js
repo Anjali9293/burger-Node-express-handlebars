@@ -4,11 +4,11 @@ const defaultConnecton = {
     user: "root",
     password: "anjalipant123",
     database: "burgers_db"
-  };
+};
 
 const mysql = require( 'mysql' );
 const connectionString = process.env.CLEARDB_DATABASE_URL || defaultConnecton;
-// wrapper to create promise around mysql
+
 class Database {
     constructor( config ) {
         this.connection = mysql.createConnection( config );
